@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="-30dp"
+        app:cardBackgroundColor="#F8CC8A"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_height="143dp"
+            android:text="SCORE BOARD"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:textSize="44dp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/teamAinput"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:text="Team A" />
+
+        <EditText
+            android:id="@+id/teamBinput"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Team B" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addTeamsBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#F8CC8A"
+        android:layout_gravity="center"
+        android:text="Add Teams"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/teamALabel"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="GSW"/>
+
+        <TextView
+            android:id="@+id/teamBLabel"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="LAL"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+        android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <!-- Value Text -->
+    <TextView
+        android:id="@+id/scoreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="90dp"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <!-- Second Value Text -->
+    <TextView
+        android:id="@+id/scoreB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp">
+            <!-- Increase Button -->
+            <Button
+                android:id="@+id/increase_button"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp" />
+            <!-- Decrease Button -->
+            <Button
+                android:id="@+id/decrease_button"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Second Increase Button -->
+            <Button
+                android:id="@+id/increase_button_2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp" />
+            <Button
+                android:id="@+id/decrease_button_2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
